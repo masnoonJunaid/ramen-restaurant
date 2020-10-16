@@ -27,17 +27,34 @@ class HomePage extends React.Component{
     }
     else{
       return (
-        <div>
-          <h1>Hello from HomePage</h1>
-          <ul>
-            {items.map(item =>(
-              <p>Brand: {item.Brand}</p>
-            ))}
-          </ul>
-        </div>
+        <Homepage>
+          <navbar className="nav-bar">
+            <h2 className="nav-header">Ramen Restaurants</h2>
+          </navbar>
+        </Homepage>
       )
     }
   }
 }
 
+
+const Homepage = styled.div`
+.nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  height: 12vh;
+  position:fixed;
+  box-shadow: 1px 5px lightgrey;
+  backgroun-color: ghostwhite;
+  width:100%;
+}
+
+.nav-header{
+  font-family: 'Roboto', sans-serif;
+  margin-left:4%;
+  color: cornflowerblue;
+}
+
+
+`
 export default HomePage
