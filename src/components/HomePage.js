@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import escapeRegExp from 'escape-string-regexp'
 import sortBy from 'sort-by'
+import '../App.css';
+
 
 class HomePage extends React.Component{
 
@@ -38,7 +40,7 @@ class HomePage extends React.Component{
       showingRestaurant = this.state.items
     }
       return (
-        <Homepage>
+        <Homepage id="home">
           <div className="search-bar">
               <img className="search-icon" alt=""  src='./icons/search.svg'/>
               <input
