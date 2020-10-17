@@ -26,15 +26,15 @@ or
       ├── components
          ├── Footer.js #footer component , contains stuffs to stay in touch with organization
          ├── HomePage.js # Default and interactive UI
-         ├── Navbar.ja # Top Component of application 
+         ├── Navbar.ja # Top Component of application
     ├── App.css # Styles for your app. Feel free to customize this as you desire.
     ├── App.js # This is the root of your app. Contains static HTML right now.
     ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
     ├── HomePage.js # A react component which render the initial state of application
 
-    ├── index.css # Global styles. You probably won't need to change anything here.
-    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
-    ├── SearchBooks.js # This component render an input field where users enter the query and result displayed based on predefined searched terms in SEARCH_TERMS.md file.
+    ├── index.css # Global styles.
+    └── index.js #  It is used for DOM rendering only.
+
 ```
 
 
