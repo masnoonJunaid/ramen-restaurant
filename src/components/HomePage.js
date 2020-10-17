@@ -5,7 +5,8 @@ class HomePage extends React.Component{
 
   state = {
     items:[],
-    isLoaded:false
+    isLoaded:false,
+    query:'',
   }
 
   componentDidMount(){
@@ -21,40 +22,42 @@ class HomePage extends React.Component{
   render(){
 
     let { isLoaded, items } = this.state;
-
-    if(!isLoaded){
-      return<div>Loading...</div>
-    }
-    else{
       return (
         <Homepage>
-          <navbar className="nav-bar">
-            <h2 className="nav-header">Ramen Restaurants</h2>
-          </navbar>
+          <div className="search-bar">
+              <img className="search-icon" alt=""  src='./icons/search.svg'/>
+              <input className="search-input" type = "text" placeholder="Search"
+              />
+          </div>
         </Homepage>
       )
-    }
+
   }
 }
 
 
 const Homepage = styled.div`
-.nav-bar{
-  display: flex;
-  flex-wrap: wrap;
-  height: 12vh;
-  position:fixed;
-  box-shadow: 1px 5px lightgrey;
-  backgroun-color: ghostwhite;
-  width:100%;
+.search-bar{
+margin-left:auto;
+margin-right:auto;
+width:60%;
+margin-top:4%;
+height:8vh;
+background-color:cornflowerblue;
+border-radius:18px;
+display:flex;
 }
 
-.nav-header{
-  font-family: 'Roboto', sans-serif;
-  margin-left:4%;
-  color: cornflowerblue;
+.search-icon{
+  width:20%;
 }
-
+.search-input{
+  width:60%;
+  border:lightgrey solid;
+  font-family:'Roboto', sans-serif;
+  text-align:center;
+  font-size:100%;
+}
 
 `
 export default HomePage

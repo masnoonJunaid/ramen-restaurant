@@ -1,0 +1,21 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  height: 12vh;
+  position:fixed;
+  box-shadow: 1px 5px lightgrey;
+  backgroun-color: ghostwhite;
+  width:100%;
+}
+
+.nav-header{
+  font-family: 'Roboto', sans-serif;
+  margin-left:4%;
+  color: cornflowerblue;
+  margin-top:2%;
+}
