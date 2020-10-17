@@ -1,3 +1,46 @@
+# Freecharge Sample assessment
+
+This is the  assessment project for Freecharge's UI Developer hiring chaallenge at https://hackerearth.com. The goal of this project is to provide a familiarity with chaallenge. Project required concept of Controlled Component  dynamically render search result based on user input of different categories.
+or
+### Run this with localhost
+
+* install all project dependencies with `npm install`
+* start the development server with `npm start`
+
+## What is inside this
+```bash
+
+├── README.md - This file.
+├── package.json # npm package manager file. It's unlikely that you'll need to modify this.
+├── public
+│   |── index.html # DO NOT MODIFY
+    ├── icons # Helpful images for your app. Use at your discretion.
+    │   ├── comment.svg
+    │   ├── fb.svg
+    │   ├── linkedin.svg
+    │   ├── searchsvg
+    │   ├── share.svg
+    │  
+
+└── src
+      ├── components
+         ├── Footer.js #footer component , contains stuffs to stay in touch with organization
+         ├── HomePage.js # Default and interactive UI
+         ├── Navbar.ja # Top Component of application 
+    ├── App.css # Styles for your app. Feel free to customize this as you desire.
+    ├── App.js # This is the root of your app. Contains static HTML right now.
+    ├── App.test.js # Used for testing. Provided with Create React App. Testing is encouraged, but not required.
+    ├── HomePage.js # A react component which render the initial state of application
+
+    ├── index.css # Global styles. You probably won't need to change anything here.
+    └── index.js # You should not need to modify this file. It is used for DOM rendering only.
+    ├── SearchBooks.js # This component render an input field where users enter the query and result displayed based on predefined searched terms in SEARCH_TERMS.md file.
+```
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
