@@ -9,16 +9,6 @@ class HomePage extends React.Component{
     query:'',
   }
 
-  componentDidMount(){
-    fetch('http://starlord.hackerearth.com/TopRamen')
-    .then(res => res.json())
-    .then(json => {
-      this.setState({
-        isLoaded:true,
-        items:json
-      })
-    })
-  }
   render(){
 
     let { isLoaded, items } = this.state;
@@ -41,7 +31,7 @@ const Homepage = styled.div`
 margin-left:auto;
 margin-right:auto;
 width:60%;
-margin-top:4%;
+margin-top:2%;
 height:8vh;
 background-color:cornflowerblue;
 border-radius:18px;
