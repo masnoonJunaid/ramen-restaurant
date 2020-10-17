@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import '../App.css';
+
 class Restaurants extends React.Component{
 
   state = {
@@ -33,6 +35,11 @@ class Restaurants extends React.Component{
                     <p className="prof-details"><b>Country : </b>{item.Country}</p>
                     <p className="prof-details"><b>Rating : </b>{item.Stars}</p>
                     <p className="prof-details"><b>Variety : </b>{item.Variety}</p>
+                    <div className="icon-div">
+                      <img className="icons" alt="" src="./icons/comment.svg"/>
+                      <img className="icons" alt="" src="./icons/share.svg"/>
+                      <img className="icons" alt="" src="./icons/save.svg"/>
+                    </div>
                   </li>
                 ))}
               </ul>
@@ -46,20 +53,50 @@ class Restaurants extends React.Component{
 const Profile = styled.div`
 .rest-list{
   width:100%;
+  height:100%;
   display:flex;
   flex-wrap:wrap;
   float:left;
-  margin-ledt:auto;
+  margin-left:auto;
   margin-right:auto;
-  align-item:center;
   list-style-type:none;
 }
+
+
+
 .rest-profile{
   margin:2%;
   width:20%;
-  height:25%;
+  height:30%;
   border:solid lightgrey;
-  border-radius:10px;
+  border-radius:4%;
+}
+@media screen and (max-width:900px) {
+  .rest-profile{
+    width:40%
+  }
+}
+
+@media screen and (max-width:700px){
+  .rest-profile{
+    width:70%;
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:550px){
+  .rest-profile{
+    width:80%;
+  }
+}
+
+.icon-div{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.icons{
+  width:10%;
+  margin:10%;
 }
 `
 
