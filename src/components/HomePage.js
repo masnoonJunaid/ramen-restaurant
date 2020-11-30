@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
 import escapeRegExp from 'escape-string-regexp'
-import sortBy from 'sort-by'
 import '../App.css';
 
 
@@ -9,7 +8,6 @@ class HomePage extends React.Component{
 
   state = {
     items:[],
-    isLoaded:false,
     query:'',
   }
 
@@ -31,7 +29,6 @@ class HomePage extends React.Component{
 
   render(){
     let showingRestaurant;
-    let { isLoaded, items, query } = this.state;
 
     if(this.state.query){
       const match = new RegExp(escapeRegExp(this.state.query), 'i')
